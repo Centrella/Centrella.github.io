@@ -54,12 +54,12 @@ p {
 }
 
 .bg-primary {
-    background-color: #2C3539;
+    background-color: #1C2841;
 }
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: #1C2841;
 }
 
 .text-faded {
@@ -324,8 +324,25 @@ header .header-content .header-content-inner p {
     margin: 0 auto 20px;
 }
 
-.text-primary {
-    color: #808080;
+.text-primary-facebook {
+    color: #3b5998;
+}
+.text-primary-twitter {
+    color: #4099FF;
+}
+.text-primary-soundcloud {
+    color: #ff8800;
+}
+.text-primary-instagram {
+    color: #3f729b;
+}
+
+.text-primary-spotify {
+    color: #81b71a;
+}
+
+.text-primary-youtube-play {
+    color: #bb0000;
 }
 
 .no-gutter > [class*=col-] {
