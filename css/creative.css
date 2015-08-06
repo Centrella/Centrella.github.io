@@ -99,6 +99,8 @@ aside {
     color: #808080;
 }
 
+
+
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
@@ -496,4 +498,8 @@ body {
 
 .email a {
     color: #fff;
+}
+
+iframe {
+    text-align: center;
 }
