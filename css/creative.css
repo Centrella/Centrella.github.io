@@ -500,7 +500,7 @@ body {
     color: #fff;
 } 
 
-iframe {
+ iframe.spotify {
     position:relative;
     top: 12px;
     float: right;
