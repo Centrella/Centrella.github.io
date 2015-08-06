@@ -3866,12 +3866,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
 }
 
-.nav > li > iframe {
-  position: relative;
-  display: block;
-  padding: 30px 15px 0px 0px;
-}
-
 .nav > li > a {
   position: relative;
   display: block;

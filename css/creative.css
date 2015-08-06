@@ -498,4 +498,10 @@ body {
 
 .email a {
     color: #fff;
+} 
+
+iframe {
+    position:relative;
+    top: 12px;
+    float: right;
 }
