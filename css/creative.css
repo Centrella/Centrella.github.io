@@ -183,7 +183,7 @@ header {
     text-align: center;
     color: #fff;
     background-image: url(../img/header.jpg);
-    background-position: center;
+    background-position: center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -504,4 +504,8 @@ body {
     position:relative;
     top: 12px;
     float: right;
+}
+
+.press {
+    color: white;
 }
