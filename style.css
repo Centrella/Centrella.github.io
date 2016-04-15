@@ -548,6 +548,11 @@ iframe{
 	width: 130%;
 }
 
+#bioPic{
+	height: 50vh;
+	width: 75%;
+}
+
 #side-nav{
 	padding-top: 10px;
 }

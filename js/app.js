@@ -2,7 +2,7 @@ var app = angular.module('app', ['ui.router']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 
-	$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/landing/videos');
 
     $stateProvider.state('home', {
         url: '/',
