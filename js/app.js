@@ -31,3 +31,15 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     });
 
 });
+
+app.controller('landingCtrl', function($scope){
+    
+    $scope.showSocial = false;
+
+    $scope.toggleSocial = function(){
+        $scope.showSocial = !$scope.showSocial;
+    }
+
+});
+
+

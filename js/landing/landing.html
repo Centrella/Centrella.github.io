@@ -1,4 +1,4 @@
-<div class="page-container bgc-black">
+<div class="page-container bgc-black" ng-controller="landingCtrl">
     
 <!-- bloc-1 -->
 <div class="row">
@@ -36,26 +36,33 @@
 							<a>Press</a>
 						</h5>
 					</li>
-					<li>
+					<li ng-click="toggleSocial()">
 						<h5 class="mg-md">
-							<a class="social mg-md" href="https://twitter.com/ZCentrella"><span class="fa fa-twitter icon-sm"></span></a>
+							<a>Connect</a>
 						</h5>
 					</li>
-					<li>
-						<h5 class="mg-md">
-							<a class="social mg-md" href="https://www.facebook.com/Centrellamusic"><span class="fa fa-facebook icon-sm"></span></a>
-						</h5>
-					</li>
-					<li>
-						<h5 class="mg-md">
-							<a class="social mg-md" href="https://soundcloud.com/centrella"><span class="fa fa-soundcloud icon-sm"></span></a>
-						</h5>
-					</li>
-					<li>
-						<h5 class="mg-md">
-							<a class="social mg-md" href="https://play.spotify.com/album/2cv9Gza3HSFY7BejhOiOZn?play=true&amp;utm_source=open.spotify.com&amp;utm_medium=open"><span class="fa fa-spotify icon-sm"></span></a>
-						</h5>
-					</li>
+					<div ng-show="showSocial">
+						<li>
+							<h5 class="mg-md">
+								<a class="social mg-md" href="https://twitter.com/ZCentrella"><span class="fa fa-twitter icon-sm"></span></a>
+							</h5>
+						</li>
+						<li>
+							<h5 class="mg-md">
+								<a class="social mg-md" href="https://www.facebook.com/Centrellamusic"><span class="fa fa-facebook icon-sm"></span></a>
+							</h5>
+						</li>
+						<li>
+							<h5 class="mg-md">
+								<a class="social mg-md" href="https://soundcloud.com/centrella"><span class="fa fa-soundcloud icon-sm"></span></a>
+							</h5>
+						</li>
+						<li>
+							<h5 class="mg-md">
+								<a class="social mg-md" href="https://play.spotify.com/album/2cv9Gza3HSFY7BejhOiOZn?play=true&amp;utm_source=open.spotify.com&amp;utm_medium=open"><span class="fa fa-spotify icon-sm"></span></a>
+							</h5>
+						</li>
+					</div>
 				</ul>
 			</div>
 			<ui-view></ui-view>
