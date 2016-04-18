@@ -397,6 +397,14 @@ iframe{
         padding-right: 20px;  
     }
 }
+
+@media (min-width: 767px)
+{
+    #exCollapsingNavbar{
+		display: none;
+	}
+}
+
 @media (max-width: 768px)
 {
     .container{width:100%;}
@@ -473,24 +481,6 @@ iframe{
         left:-1px;
         right:-1px;
     }
-    .navbar-collapse{
-        padding:0;
-        overflow-x: hidden;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    .navbar-brand img{
-        max-height: 40px;
-        width:auto;
-        margin: -10px 10px 0 0;    
-    }
-    .nav-invert .navbar-header{
-        float: none;
-        width:100%;
-    }
-    .nav-invert .navbar-toggle{
-        float:left; 
-    }
     .btn.pull-left, .btn.pull-right{
        float:none!important; 
     }
@@ -537,6 +527,22 @@ iframe{
     .video-bg-contianer{
         display:none;
     }
+
+    #modalWell{
+		background-color: rgba(0,0,0,.8);
+		border-color: rgba(0,0,0,.8);
+	}
+
+	.embed-responsive iframe{
+		height: 100%;
+		width: 100%;
+	}
+	#navPic{
+		display: none;
+	}
+	#desktopNav{
+		display: none;
+	}
 }
 
 .music{
@@ -545,7 +551,7 @@ iframe{
 
 #navPic{
 	height: 150%;
-	width: 130%;
+	width: 120%;
 }
 
 #bioPic{
@@ -556,4 +562,50 @@ iframe{
 
 #side-nav{
 	padding-top: 10px;
+}
+
+#modal{
+	margin-top: 100px;
+	color: white;
+}
+
+#modalWell{
+	background-color: rgba(0,0,0,.8);
+	border-color: rgba(0,0,0,.8);
+}
+
+#closeModal{
+	margin-right: 100px;
+	margin-bottom: 100px;
+}
+
+.albumCover{
+	text-align: center;
+	height: 80%;
+	width: 80%;
+}
+
+.embed-responsive iframe{
+	height: 100%;
+	width: 100%;
+}
+
+.embed-responsive{
+	overflow: auto;
+}
+
+.exCollapsingNavbar{
+	color: white;
+}
+
+.mg-md{
+	color: white;
+}
+
+.mg-md a{
+	color: white;
+}
+
+.modal-content{
+	background-color: transparent;
 }

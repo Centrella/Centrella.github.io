@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ui.router', 'ui.bootstrap']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 
@@ -23,6 +23,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     })
     .state('landing.music', {
     	url: '/music',
+        controller: 'musicCtrl',
     	templateUrl: './js/landing/music.html',
     })
     .state('landing.press', {
@@ -38,6 +39,36 @@ app.controller('landingCtrl', function($scope){
 
     $scope.toggleSocial = function(){
         $scope.showSocial = !$scope.showSocial;
+    }
+
+});
+
+app.controller('musicCtrl', function($scope, $uibModal){
+
+    $scope.bow = function() {
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: './js/landing/iWontBowModal.html',
+            controller: 'modalCtrl',
+            size: 'lg',
+        });
+    };
+
+    $scope.justMe = function() {
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: './js/landing/justMeModal.html',
+            controller: 'modalCtrl',
+            size: 'lg',
+        });
+    };
+
+});
+
+app.controller('modalCtrl', function($scope, $uibModalInstance){
+
+    $scope.close = function(){
+        $uibModalInstance.close();
     }
 
 });
